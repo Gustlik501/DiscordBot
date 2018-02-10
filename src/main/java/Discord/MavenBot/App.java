@@ -28,7 +28,7 @@ public class App extends ListenerAdapter {
 		ChatterBot bot2 = factory.create(ChatterBotType.PANDORABOTS, "b0dafd24ee35a477"); // b0dafd24ee35a477
 		bot2session = bot2.createSession();
 		JDA jda = new JDABuilder(AccountType.BOT)
-				.setToken("MjU4MzQ0NzkxMjUzODQzOTY4.DV4oYQ.198Vzy0uI0PrY0_GrIGptyQ9KGE").setStatus(OnlineStatus.ONLINE)
+				.setToken("Enter Bot token here").setStatus(OnlineStatus.ONLINE)
 				.buildBlocking();
 		jda.addEventListener(new App());
 		System.out.println("Finished loading");
