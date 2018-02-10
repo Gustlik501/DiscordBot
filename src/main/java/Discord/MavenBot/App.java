@@ -25,7 +25,7 @@ public class App extends ListenerAdapter {
 
 	public static void main(String[] args) throws Exception {
 		ChatterBotFactory factory = new ChatterBotFactory();
-		ChatterBot bot2 = factory.create(ChatterBotType.PANDORABOTS, "b0dafd24ee35a477"); // b0dafd24ee35a477
+		ChatterBot bot2 = factory.create(ChatterBotType.PANDORABOTS, "b0dafd24ee35a477"); // ID of the pandorasbots chatbot u wana use
 		bot2session = bot2.createSession();
 		JDA jda = new JDABuilder(AccountType.BOT)
 				.setToken("Enter Bot token here").setStatus(OnlineStatus.ONLINE)
